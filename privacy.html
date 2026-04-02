@@ -4,137 +4,232 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Privacy Policy — Tint Calendar</title>
-  <meta
-    name="description"
-    content="Privacy Policy for Tint Calendar."
-  />
+  <meta name="description" content="Privacy Policy for Tint Calendar." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <style>
     :root {
-      --bg: #f7f8fc;
+      --bg: #f4f6ff;
       --card: #ffffff;
-      --text: #1f2937;
-      --muted: #6b7280;
-      --accent: #4f46e5;
-      --border: #e5e7eb;
-      --shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-      --radius: 16px;
-      --max-width: 860px;
+      --text: #0f172a;
+      --muted: #64748b;
+      --accent: #6366f1;
+      --accent2: #8b5cf6;
+      --border: #e2e8f0;
+      --shadow: 0 4px 24px rgba(99, 102, 241, 0.08);
+      --radius: 18px;
+      --max-width: 780px;
     }
 
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
 
     body {
       margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: linear-gradient(180deg, #f8faff 0%, #f7f8fc 100%);
+      font-family: 'Inter', Arial, sans-serif;
+      background: var(--bg);
       color: var(--text);
-      line-height: 1.7;
+      line-height: 1.75;
     }
 
+    /* ── NAV ── */
+    nav {
+      border-bottom: 1px solid var(--border);
+      background: rgba(255,255,255,0.85);
+      backdrop-filter: blur(10px);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .nav-inner {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      padding: 16px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .nav-logo {
+      font-size: 17px;
+      font-weight: 800;
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-decoration: none;
+    }
+
+    .nav-back {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--accent);
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: gap 0.2s;
+    }
+
+    .nav-back:hover { gap: 10px; }
+
+    /* ── MAIN ── */
     .container {
       max-width: var(--max-width);
       margin: 0 auto;
-      padding: 24px;
+      padding: 48px 24px 64px;
     }
 
     .card {
-      margin-top: 48px;
       background: var(--card);
       border: 1px solid var(--border);
       border-radius: var(--radius);
       box-shadow: var(--shadow);
-      padding: 32px;
+      padding: 44px 48px;
+    }
+
+    .page-label {
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--accent);
+      margin: 0 0 12px;
     }
 
     h1 {
-      font-size: 36px;
-      margin: 0 0 10px;
+      font-size: 38px;
+      font-weight: 800;
+      line-height: 1.15;
+      margin: 0 0 8px;
+      background: linear-gradient(135deg, #1e1b4b, var(--accent));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .meta {
+      font-size: 14px;
+      color: var(--muted);
+      margin: 0 0 36px;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid var(--border);
+      margin: 32px 0;
     }
 
     h2 {
-      font-size: 22px;
-      margin: 28px 0 12px;
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--text);
+      margin: 32px 0 10px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    h2::before {
+      content: '';
+      display: inline-block;
+      width: 4px;
+      height: 18px;
+      background: linear-gradient(180deg, var(--accent), var(--accent2));
+      border-radius: 2px;
+      flex-shrink: 0;
     }
 
     p {
       margin: 0 0 14px;
+      color: var(--muted);
+      font-size: 15px;
     }
 
-    .muted {
-      color: var(--muted);
-    }
+    p:last-of-type { margin-bottom: 0; }
 
     a {
       color: var(--accent);
       text-decoration: none;
+      font-weight: 600;
     }
 
-    a:hover {
-      text-decoration: underline;
+    a:hover { text-decoration: underline; }
+
+    .footer {
+      margin-top: 36px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 13px;
     }
 
-    .back {
-      display: inline-block;
-      margin-top: 24px;
-      font-weight: 700;
+    .footer a {
+      color: var(--accent);
+      font-weight: 600;
     }
 
     @media (max-width: 700px) {
-      .card {
-        padding: 24px;
-        margin-top: 24px;
-      }
-
-      h1 {
-        font-size: 30px;
-      }
+      .card { padding: 28px 22px; }
+      h1 { font-size: 30px; }
     }
   </style>
 </head>
 <body>
+  <nav>
+    <div class="nav-inner">
+      <a class="nav-logo" href="./index.html">🎨 Tint Calendar</a>
+      <a class="nav-back" href="./index.html">← Back to home</a>
+    </div>
+  </nav>
+
   <div class="container">
     <div class="card">
+      <p class="page-label">Legal</p>
       <h1>Privacy Policy</h1>
-      <p class="muted">Last updated: April 2026</p>
+      <p class="meta">Last updated: April 2026</p>
+
+      <hr />
 
       <p>
-        Tint Calendar is designed to help users customize calendar event colors with a simple and lightweight browser extension.
+        Tint Calendar is a lightweight Chrome extension that helps you customize calendar event colors. Privacy is built in by design — there are no accounts, no servers, and nothing leaves your device.
       </p>
 
       <h2>Information Collection</h2>
       <p>
-        Tint Calendar does not collect, store, or transmit personal data to external servers.
+        Tint Calendar does not collect, store, or transmit any personal data to external servers. We have no access to anything on your device.
       </p>
 
       <h2>Local Storage</h2>
       <p>
-        The extension stores color preferences locally in your browser so your customizations can persist across page reloads and future visits.
+        The extension stores your color preferences locally in your browser using Chrome's storage API. This data never leaves your device and is used solely to persist your customizations across page reloads and sessions.
       </p>
 
       <h2>Third-Party Services</h2>
       <p>
-        Tint Calendar does not use advertising trackers, analytics services, or third-party data collection tools.
+        Tint Calendar does not use advertising networks, analytics services, or any third-party data collection tools of any kind.
       </p>
 
       <h2>Data Sharing</h2>
       <p>
-        Tint Calendar does not sell, transfer, or share your data with third parties.
+        We do not sell, transfer, rent, or share your data with any third parties — because we don't have any of your data to begin with.
       </p>
 
       <h2>Changes to This Policy</h2>
       <p>
-        If Tint Calendar introduces new functionality that affects data usage in the future, this privacy policy will be updated accordingly.
+        If future versions of Tint Calendar introduce features that affect data handling, this policy will be updated and the date above will reflect the change.
       </p>
 
       <h2>Contact</h2>
       <p>
-        For questions or support requests, contact:
+        Have a question or concern? Reach out at
         <a href="mailto:tintcalendar@gmail.com">tintcalendar@gmail.com</a>
       </p>
+    </div>
 
-      <a class="back" href="./index.html">← Back to Tint Calendar</a>
+    <div class="footer">
+      © 2026 Tint Calendar ·
+      <a href="./index.html">Back to home</a>
     </div>
   </div>
 </body>
