@@ -1,0 +1,16 @@
+# Tint Calendar
+
+> Tint Calendar is a browser extension for Google Calendar that lets you customize and persistently apply colors to calendar events. It solves the limitation of Google Calendar's built-in color palette by offering a broader set of colors and the ability to save color choices per event.
+
+## Pages
+
+- [Home](https://ant0kr.github.io/tintcalendar/): Main landing page with features overview, installation instructions, and FAQ.
+- [How to Add More Colors to Google Calendar](https://ant0kr.github.io/tintcalendar/how-to-add-more-colors-google-calendar/): Step-by-step guide explaining how users can get more color options in Google Calendar using the Tint Calendar extension.
+- [Privacy Policy](https://ant0kr.github.io/tintcalendar/privacy/): Privacy policy for the Tint Calendar browser extension.
+
+## About
+
+- **Product**: Browser extension (Chrome Web Store)
+- **Purpose**: Adds more color customization options to Google Calendar events
+- **Platform**: Google Calendar (web)
+- **License**: Free to use
