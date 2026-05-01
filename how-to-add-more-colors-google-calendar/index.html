@@ -3,18 +3,18 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>How to Add More Colors to Google Calendar (2026 Guide)</title>
-  <meta name="description" content="Learn how to add more colors to Google Calendar. Real solution that works - no hacks, no messy workarounds." />
+  <title>How to Change Colors on Google Calendar | Desktop, iPhone, Android</title>
+  <meta name="description" content="Learn how to change colors on Google Calendar for calendars and events, use custom colors, understand built-in limits, and add more colors with Tint Calendar." />
   <meta name="robots" content="index, follow" />
   <link rel="canonical" href="https://ant0kr.github.io/tintcalendar/how-to-add-more-colors-google-calendar/" />
+  <meta property="og:title" content="How to Change Colors on Google Calendar | Desktop, iPhone, Android" />
+  <meta property="og:description" content="Learn how to change colors on Google Calendar for calendars and events, use custom colors, understand built-in limits, and add more colors with Tint Calendar." />
   <meta property="og:type" content="article" />
-  <meta property="og:title" content="How to Add More Colors to Google Calendar (2026 Guide)" />
-  <meta property="og:description" content="Learn how to add more colors to Google Calendar. Real solution that works - no hacks, no messy workarounds." />
   <meta property="og:url" content="https://ant0kr.github.io/tintcalendar/how-to-add-more-colors-google-calendar/" />
   <meta property="og:image" content="https://ant0kr.github.io/tintcalendar/images/screenshot-5.png" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="How to Add More Colors to Google Calendar (2026 Guide)" />
-  <meta name="twitter:description" content="Learn how to add more colors to Google Calendar. Real solution that works - no hacks, no messy workarounds." />
+  <meta name="twitter:title" content="How to Change Colors on Google Calendar | Desktop, iPhone, Android" />
+  <meta name="twitter:description" content="Learn how to change colors on Google Calendar for calendars and events, use custom colors, understand built-in limits, and add more colors with Tint Calendar." />
   <meta name="twitter:image" content="https://ant0kr.github.io/tintcalendar/images/screenshot-5.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -32,22 +32,22 @@
       --border: #e2e8f0;
       --shadow: 0 4px 24px rgba(99, 102, 241, 0.08);
       --radius: 18px;
-      --max-width: 860px;
+      --max-width: 900px;
     }
 
     * { box-sizing: border-box; }
 
     body {
       margin: 0;
-      font-family: 'Inter', Arial, sans-serif;
+      font-family: "Inter", Arial, sans-serif;
       background: var(--bg);
       color: var(--text);
       line-height: 1.75;
     }
 
-    nav {
+    nav.top-nav {
       border-bottom: 1px solid var(--border);
-      background: rgba(255,255,255,0.85);
+      background: rgba(255, 255, 255, 0.85);
       backdrop-filter: blur(10px);
       position: sticky;
       top: 0;
@@ -78,6 +78,13 @@
       white-space: nowrap;
     }
 
+    .nav-logo img {
+      width: 28px;
+      height: 28px;
+      border-radius: 6px;
+      flex-shrink: 0;
+    }
+
     .nav-links {
       display: flex;
       gap: 16px;
@@ -91,22 +98,10 @@
       color: var(--muted);
     }
 
-    .nav-links a:hover {
-      color: var(--accent);
-      text-decoration: underline;
-    }
-
-    .nav-logo img {
-      width: 28px;
-      height: 28px;
-      border-radius: 6px;
-      flex-shrink: 0;
-    }
-
     .container {
       max-width: var(--max-width);
       margin: 0 auto;
-      padding: 40px 24px 64px;
+      padding: 36px 24px 64px;
     }
 
     .card {
@@ -114,7 +109,7 @@
       border: 1px solid var(--border);
       border-radius: var(--radius);
       box-shadow: var(--shadow);
-      padding: 40px;
+      padding: 38px;
     }
 
     .eyebrow {
@@ -130,133 +125,113 @@
       font-size: 40px;
       font-weight: 800;
       line-height: 1.12;
-      margin: 0 0 10px;
+      margin: 0 0 12px;
       background: linear-gradient(135deg, #1e1b4b, var(--accent));
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
       background-clip: text;
     }
 
-    .meta {
-      margin: 0 0 24px;
-      font-size: 14px;
-      color: var(--muted);
-    }
-
     h2 {
-      font-size: 22px;
+      font-size: 26px;
       line-height: 1.3;
-      margin: 34px 0 12px;
+      margin: 36px 0 12px;
       color: var(--text);
-    }
-
-    h2.icon-title,
-    h3.icon-title {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-
-    h2.icon-title .icon,
-    h3.icon-title .icon {
-      width: 34px;
-      height: 34px;
-      border-radius: 10px;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 17px;
-      background: linear-gradient(135deg, #e0e7ff, #ede9fe);
-      border: 1px solid #dbe3ff;
-      flex-shrink: 0;
+      scroll-margin-top: 80px;
     }
 
     h3 {
-      font-size: 18px;
+      font-size: 19px;
       line-height: 1.35;
-      margin: 22px 0 10px;
+      margin: 24px 0 10px;
       color: var(--text);
+      scroll-margin-top: 80px;
     }
 
-    p {
-      margin: 0 0 14px;
+    p,
+    li,
+    td {
       color: var(--muted);
       font-size: 15px;
     }
 
+    p {
+      margin: 0 0 14px;
+    }
+
     ul,
     ol {
-      margin: 0 0 14px;
+      margin: 0 0 16px;
       padding-left: 22px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    strong,
+    th {
+      color: var(--text);
+    }
+
+    .meta {
+      margin: 0 0 22px;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .breadcrumb {
+      margin: 8px 0 20px;
+      font-size: 14px;
       color: var(--muted);
     }
 
-    li { margin: 0 0 8px; }
+    .breadcrumb ol {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 0;
+      padding: 0;
+    }
 
-    strong { color: var(--text); }
+    .breadcrumb li:not(:last-child)::after {
+      content: ">";
+      margin-left: 8px;
+      color: #94a3b8;
+    }
 
+    .quick-answer,
+    .toc,
     .callout {
       border: 1px solid var(--border);
-      border-left: 4px solid var(--accent);
       border-radius: 12px;
       background: #f8faff;
-      padding: 14px 16px;
+      padding: 16px;
       margin: 18px 0;
-      color: var(--text);
+    }
+
+    .quick-answer {
+      border-left: 4px solid var(--accent);
+    }
+
+    .toc ul {
+      margin: 10px 0 0;
+    }
+
+    .toc p {
+      margin-bottom: 6px;
       font-weight: 600;
-    }
-
-    .callout.warn {
-      background: #fff7ed;
-      border-color: #fed7aa;
-      border-left-color: #f97316;
-    }
-
-    .callout.success {
-      background: #ecfeff;
-      border-color: #bae6fd;
-      border-left-color: #0891b2;
-    }
-
-    .color-legend {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 10px;
-      margin: 12px 0 16px;
-    }
-
-    .legend-item {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      font-size: 14px;
       color: var(--text);
-      background: #f8faff;
-      border: 1px solid var(--border);
-      border-radius: 10px;
-      padding: 8px 10px;
     }
 
-    .dot {
-      width: 12px;
-      height: 12px;
-      border-radius: 50%;
-      flex-shrink: 0;
-      border: 1px solid rgba(15, 23, 42, 0.15);
-    }
-
-    .dot.work { background: #3b82f6; }
-    .dot.health { background: #22c55e; }
-    .dot.personal { background: #eab308; }
-    .dot.deadline { background: #ef4444; }
-
-    .screenshot {
+    figure.screenshot {
       margin: 22px 0;
       border: 1px solid var(--border);
       border-radius: 14px;
       overflow: hidden;
-      box-shadow: var(--shadow);
       background: #fff;
+      box-shadow: var(--shadow);
     }
 
     .screenshot img {
@@ -267,35 +242,95 @@
     }
 
     .screenshot figcaption {
-      font-size: 14px;
-      color: var(--muted);
       padding: 10px 14px;
       border-top: 1px solid var(--border);
+      font-size: 14px;
+      color: var(--muted);
     }
 
     table {
       width: 100%;
       border-collapse: collapse;
       margin: 18px 0;
-      font-size: 14px;
       border: 1px solid var(--border);
       border-radius: 12px;
       overflow: hidden;
     }
 
+    caption {
+      text-align: left;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 8px;
+    }
+
     th,
     td {
       border-bottom: 1px solid var(--border);
-      padding: 10px 12px;
+      padding: 11px 12px;
+      vertical-align: top;
       text-align: left;
     }
 
-    tr:last-child td { border-bottom: none; }
+    tbody tr:last-child td {
+      border-bottom: none;
+    }
 
-    th {
+    thead th {
       background: linear-gradient(135deg, #e0e7ff, #ede9fe);
-      color: #1e1b4b;
+      font-size: 14px;
       font-weight: 700;
+    }
+
+    details {
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      background: #fff;
+      padding: 0 14px;
+      margin: 10px 0;
+    }
+
+    summary {
+      cursor: pointer;
+      padding: 12px 0;
+      font-weight: 600;
+      color: var(--text);
+    }
+
+    details p {
+      margin: 0 0 14px;
+      font-size: 15px;
+    }
+
+    .cta-wrap {
+      margin-top: 22px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: center;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 11px 16px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: 700;
+      border: 1px solid transparent;
+    }
+
+    .btn-primary {
+      color: #fff;
+      background: linear-gradient(135deg, var(--accent), var(--accent2));
+      box-shadow: 0 4px 14px rgba(99, 102, 241, 0.25);
+    }
+
+    .btn-secondary {
+      background: #fff;
+      border-color: var(--border);
+      color: var(--text);
     }
 
     a {
@@ -304,7 +339,17 @@
       font-weight: 600;
     }
 
-    a:hover { text-decoration: underline; }
+    a:hover {
+      text-decoration: underline;
+    }
+
+    a:focus-visible,
+    button:focus-visible,
+    summary:focus-visible {
+      outline: 2px solid #312e81;
+      outline-offset: 2px;
+      border-radius: 4px;
+    }
 
     .footer {
       margin-top: 28px;
@@ -314,9 +359,17 @@
     }
 
     @media (max-width: 760px) {
-      .card { padding: 24px; }
-      h1 { font-size: 32px; }
-      .color-legend { grid-template-columns: 1fr; }
+      .card {
+        padding: 24px;
+      }
+
+      h1 {
+        font-size: 33px;
+      }
+
+      h2 {
+        font-size: 23px;
+      }
     }
   </style>
 
@@ -324,19 +377,51 @@
   {
     "@context": "https://schema.org",
     "@type": "Article",
-    "headline": "How to Add More Colors to Google Calendar (2026 Guide)",
-    "description": "Learn how to add more colors to Google Calendar. Real solution that works - no hacks, no messy workarounds.",
+    "headline": "How to Change Colors on Google Calendar",
+    "description": "Learn how to change colors on Google Calendar for calendars and events, use custom colors, understand built-in limits, and add more colors with Tint Calendar.",
     "datePublished": "2026-04-06",
-    "dateModified": "2026-04-06",
+    "dateModified": "2026-04-30",
     "author": {
       "@type": "Organization",
       "name": "Tint Calendar"
     },
     "publisher": {
       "@type": "Organization",
-      "name": "Tint Calendar"
+      "name": "Tint Calendar",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://ant0kr.github.io/tintcalendar/images/logo.png"
+      }
     },
+    "image": "https://ant0kr.github.io/tintcalendar/images/screenshot-5.png",
     "mainEntityOfPage": "https://ant0kr.github.io/tintcalendar/how-to-add-more-colors-google-calendar/"
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://ant0kr.github.io/tintcalendar/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Guide",
+        "item": "https://ant0kr.github.io/tintcalendar/how-to-add-more-colors-google-calendar/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "How to Change Colors on Google Calendar",
+        "item": "https://ant0kr.github.io/tintcalendar/how-to-add-more-colors-google-calendar/"
+      }
+    ]
   }
   </script>
 
@@ -347,26 +432,82 @@
     "mainEntity": [
       {
         "@type": "Question",
-        "name": "Can I add unlimited colors without extensions?",
+        "name": "Can I change colors on Google Calendar?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "No - not in a practical way with default Google Calendar alone."
+          "text": "Yes. You can change the color of an entire calendar, change the color of individual events, and adjust some appearance settings. Some options depend on device and account type."
         }
       },
       {
         "@type": "Question",
-        "name": "Will this affect my existing events?",
+        "name": "How do I change the color of a calendar in Google Calendar?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "No - Tint Calendar enhances color selection and does not remove your existing events."
+          "text": "On desktop, open Google Calendar, hover over a calendar in the left sidebar, click the three-dot menu, and choose a color. If available, use the custom color option."
         }
       },
       {
         "@type": "Question",
-        "name": "Is it safe?",
+        "name": "How do I change the color of one event in Google Calendar?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes, if you install trusted extensions and review permissions before enabling them."
+          "text": "Open the event, edit it, and choose a different event color or color label if the option is available."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I add custom colors to Google Calendar?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Google Calendar supports some custom color options, especially for calendars on desktop. For more flexible custom colors and text color control, you can use a browser extension such as Tint Calendar."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I change Google Calendar colors on Android?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, but mobile options may be more limited. Open the event or calendar settings in the Google Calendar app and look for color or label options. Some custom settings may need to be created on desktop."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I change Google Calendar colors on iPhone or iPad?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, but the available options may differ from desktop. Open the event, tap Edit, and check whether color or label options are available."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why do my Google Calendar colors look different?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Colors can look different because of device rendering, app version, dark mode, light mode, appearance settings, or Google Calendar UI updates."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is Tint Calendar affiliated with Google?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Tint Calendar is an independent browser extension and is not affiliated with Google."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does Tint Calendar work on mobile?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Tint Calendar is a browser extension and is intended for desktop browser usage."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "When should I use Tint Calendar instead of built-in Google Calendar colors?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Use the built-in settings for basic calendar and event colors. Use Tint Calendar if you need more custom colors, faster color selection, or separate text color customization."
         }
       }
     ]
@@ -374,169 +515,464 @@
   </script>
 </head>
 <body>
-  <nav>
+  <nav class="top-nav">
     <div class="nav-inner">
-      <a class="nav-logo" href="../index.html"><img src="../images/logo.png" alt="Tint Calendar logo" />Tint Calendar</a>
+      <a class="nav-logo" href="/tintcalendar/">
+        <img src="../images/logo.png" alt="Tint Calendar logo" />
+        Tint Calendar
+      </a>
       <div class="nav-links">
-        <a href="../index.html">Home</a>
-        <a href="../privacy/index.html">Privacy</a>
+        <a href="/tintcalendar/">Home</a>
+        <a href="/tintcalendar/privacy/">Privacy</a>
       </div>
     </div>
   </nav>
 
   <main class="container">
-    <article class="card">
-      <p class="eyebrow">Guide</p>
-      <h1>How to Add More Colors to Google Calendar (Real Solution That Works)</h1>
-      <p class="meta">Last updated: April 6, 2026</p>
+    <article class="card" id="top">
+      <header>
+        <p class="eyebrow">Guide</p>
+        <h1>How to Change Colors on Google Calendar</h1>
+        <p class="meta">Last updated: April 30, 2026</p>
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <ol>
+            <li><a href="/tintcalendar/">Home</a></li>
+            <li><a href="/tintcalendar/how-to-add-more-colors-google-calendar/">Guide</a></li>
+            <li aria-current="page">How to Change Colors on Google Calendar</li>
+          </ol>
+        </nav>
+        <p>
+          If you are searching for how to change colors on Google Calendar, start with built-in options first. Google Calendar lets you change the default color of an entire calendar, change event color for a single event, and use appearance settings that affect how colors look.
+          On desktop, you can also use a custom color Google Calendar option for calendar-level color coding.
+        </p>
+        <p>
+          The exact workflow can differ between Google Calendar colors on desktop, Google Calendar colors on Android, and Google Calendar colors on iPhone or iPad. In this guide, you will get practical steps for each case, plus an optional path for people who need more colors for Google Calendar and separate Google Calendar text color control.
+        </p>
+      </header>
 
-      <p>
-        If you have ever tried to organize your schedule in Google Calendar, you have probably hit the same problem: there are not enough colors. And there is no simple built-in way to add more.
-      </p>
-      <p>In this guide, you will learn:</p>
-      <ul>
-        <li>what Google Calendar actually allows,</li>
-        <li>why most suggested fixes do not work,</li>
-        <li>and the practical way to get more colors.</li>
-      </ul>
+      <section id="quick-answer" aria-labelledby="quick-answer-title">
+        <h2 id="quick-answer-title">Quick answer: how to change colors on Google Calendar</h2>
+        <div class="quick-answer">
+          <ul>
+            <li>To change the color of an entire calendar on desktop, open Google Calendar, find the calendar under "My calendars," open the three-dot menu, and choose a color.</li>
+            <li>To add a custom color for a calendar on desktop, use the plus icon or custom color option in that calendar color menu.</li>
+            <li>To change the color of one event, open or right-click the event and choose a different Google Calendar event color when available.</li>
+            <li>To use labels, apply Google Calendar color labels if your account includes that feature.</li>
+            <li>To get more color options and faster reuse, use Tint Calendar as an optional extension.</li>
+          </ul>
+          <p>
+            Note: Google Calendar color behavior can differ by device, account type, and permissions, especially between personal accounts and work or school accounts.
+          </p>
+        </div>
+      </section>
 
-      <figure class="screenshot">
-        <img src="../images/screenshot-1.png" alt="Default Google Calendar color options" loading="lazy" />
-        <figcaption>Default Google Calendar setup with limited color options.</figcaption>
-      </figure>
+      <nav class="toc" aria-label="Table of contents">
+        <p>Table of contents</p>
+        <ul>
+          <li><a href="#quick-answer">Quick answer</a></li>
+          <li><a href="#change-calendar-color">Change the color of an entire calendar</a></li>
+          <li><a href="#change-event-color">Change the color of a single event</a></li>
+          <li><a href="#calendar-color-vs-event-color">Calendar color vs event color</a></li>
+          <li><a href="#appearance-settings">Appearance settings</a></li>
+          <li><a href="#color-labels">Color labels</a></li>
+          <li><a href="#built-in-limits">Built-in limits</a></li>
+          <li><a href="#tint-calendar">Add more colors with Tint Calendar</a></li>
+          <li><a href="#troubleshooting">Troubleshooting</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </nav>
 
-      <h2 class="icon-title"><span class="icon">❌</span>Can You Add Custom Colors in Google Calendar?</h2>
-      <p><strong>Short answer:</strong> not properly.</p>
-      <p>Google Calendar does not provide a real built-in feature to:</p>
-      <ul>
-        <li>freely add unlimited colors,</li>
-        <li>save custom palettes,</li>
-        <li>reuse colors quickly across events.</li>
-      </ul>
-      <p>You can assign colors, but you are still limited by the default system.</p>
+      <section id="change-calendar-color" aria-labelledby="change-calendar-color-title">
+        <h2 id="change-calendar-color-title">Change the color of an entire calendar on desktop</h2>
+        <p>
+          This method changes the default color for events in that calendar. It is the most reliable built-in way to change calendar color in Google Calendar when you manage multiple calendars such as Work, Personal, Family, Training, or Study.
+        </p>
+        <ol>
+          <li>Open Google Calendar on your computer.</li>
+          <li>In the left sidebar, find "My calendars."</li>
+          <li>Hover over the calendar you want to change.</li>
+          <li>Click the three-dot menu next to that calendar name.</li>
+          <li>Choose one of the available colors in the Google Calendar color palette.</li>
+          <li>To use a custom color, click the plus or custom color option if available.</li>
+          <li>Apply the color and close the menu.</li>
+        </ol>
+        <p>
+          Existing events usually use this calendar color unless an event has its own event-level override. For example, you can set Work to blue, Personal to green, Family to purple, and Training to orange for fast visual scanning.
+        </p>
+        <figure class="screenshot">
+          <img src="../images/internetPictures/google-calendar-change-calendar-color-desktop.png" alt="How to change colors on Google Calendar desktop using the calendar three-dot color menu" loading="lazy" />
+          <figcaption>Use the three-dot menu next to a calendar name to change the default calendar color.</figcaption>
+        </figure>
+      </section>
 
-      <h2 class="icon-title"><span class="icon">🚧</span>Common "Solutions" (That Do Not Really Work)</h2>
-      <h3 class="icon-title"><span class="icon">1</span>Creating multiple calendars</h3>
-      <p>Some guides suggest assigning different calendar colors to categories.</p>
-      <p><strong>Problem:</strong> messy, hard to manage, and not scalable.</p>
+      <section id="change-event-color" aria-labelledby="change-event-color-title">
+        <h2 id="change-event-color-title">Change the color of a single event</h2>
+        <p>
+          Changing calendar color and changing event color are different tasks. Calendar color is the default for a whole calendar. Event color is an override for one event. Use event-level color changes when a deadline, interview, call, or travel block should stand out without changing the full calendar.
+        </p>
 
-      <h3 class="icon-title"><span class="icon">2</span>Reusing existing colors manually</h3>
-      <p><strong>Problem:</strong> no consistency, no structure, and easy to lose track.</p>
+        <h3>Change event color on desktop</h3>
+        <ol>
+          <li>Open Google Calendar on desktop.</li>
+          <li>Click the event you want to recolor.</li>
+          <li>Open event details or right-click the event if that menu is available.</li>
+          <li>Find the event color selector.</li>
+          <li>Choose a new color.</li>
+          <li>Save the event if Google Calendar prompts you to save.</li>
+        </ol>
+        <p>
+          If the event belongs to a shared calendar or invite, available colors can depend on your permissions. If color code Google Calendar changes keep reverting, the event may be inheriting calendar defaults, syncing from another source, or restricted by account policy.
+        </p>
 
-      <div class="callout warn">Reality check: these are workarounds, not real solutions.</div>
+        <h3>Change event color on Android</h3>
+        <ol>
+          <li>Open the Google Calendar app.</li>
+          <li>Tap the event you want to edit.</li>
+          <li>Tap the edit pencil icon.</li>
+          <li>Look for an event color or color label field.</li>
+          <li>Choose the available color or label.</li>
+          <li>Save the event.</li>
+        </ol>
+        <p>
+          Mobile controls can be more limited than desktop. Some custom colors or labels may need to be created first on desktop, then selected on Android.
+        </p>
 
-      <figure class="screenshot">
-        <img src="../images/screenshot-2.png" alt="Google Calendar color popup with limited choices" loading="lazy" />
-        <figcaption>The default color popup is limited and quickly becomes restrictive.</figcaption>
-      </figure>
+        <h3>Change event color on iPhone and iPad</h3>
+        <ol>
+          <li>Open the Google Calendar app on iPhone or iPad.</li>
+          <li>Open the event.</li>
+          <li>Tap Edit.</li>
+          <li>Look for the color or color label field.</li>
+          <li>Select the available option.</li>
+          <li>Save the event.</li>
+        </ol>
+        <p>
+          Google Calendar colors on iPhone and iPad do not always match desktop options one-to-one. If you cannot find a needed setting, check the same event on desktop.
+        </p>
+        <figure class="screenshot">
+          <img src="../images/internetPictures/google-calendar-change-event-color-desktop.png" alt="Change event color in Google Calendar from the desktop event menu" loading="lazy" />
+          <figcaption>Use event-level color selection when you want one event to stand out without changing the whole calendar.</figcaption>
+        </figure>
+      </section>
 
-      <h2 class="icon-title"><span class="icon">✅</span>The Real Way to Add More Colors</h2>
-      <p>If you want more color options, faster selection, and a clean workflow, you need to extend Google Calendar.</p>
-      <p>
-        The easiest way is using a browser extension like
-        <a href="https://ant0kr.github.io/tintcalendar/">Tint Calendar</a>.
-      </p>
+      <section id="calendar-color-vs-event-color" aria-labelledby="calendar-vs-event-title">
+        <h2 id="calendar-vs-event-title">Calendar color vs event color: what is the difference?</h2>
+        <table>
+          <caption>Google Calendar color types compared</caption>
+          <thead>
+            <tr>
+              <th scope="col">Color type</th>
+              <th scope="col">What it changes</th>
+              <th scope="col">Best for</th>
+              <th scope="col">Where to change it</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Calendar color</td>
+              <td>Default color for all events in one calendar</td>
+              <td>Separating Work, Personal, Family, and other calendars</td>
+              <td>Desktop calendar list or calendar settings</td>
+            </tr>
+            <tr>
+              <td>Event color</td>
+              <td>One specific event override</td>
+              <td>Highlighting deadlines, calls, workouts, or travel</td>
+              <td>Event menu or event edit screen</td>
+            </tr>
+            <tr>
+              <td>Color label</td>
+              <td>Named category label tied to event color</td>
+              <td>Tracking activity types and reporting categories</td>
+              <td>Event details on supported accounts</td>
+            </tr>
+            <tr>
+              <td>Appearance color set</td>
+              <td>How event colors are displayed visually</td>
+              <td>Improving readability and visual contrast</td>
+              <td>Appearance settings on desktop</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
 
-      <h2 class="icon-title"><span class="icon">🎨</span>What Tint Calendar Does</h2>
-      <p>Tint Calendar enhances Google Calendar by:</p>
-      <ul>
-        <li>adding more color options directly in the UI,</li>
-        <li>making color selection faster,</li>
-        <li>helping you keep a consistent visual system.</li>
-      </ul>
-      <p>No hacks and no complicated setup.</p>
+      <section id="appearance-settings" aria-labelledby="appearance-settings-title">
+        <h2 id="appearance-settings-title">Change event color set and density in Google Calendar</h2>
+        <p>
+          Google Calendar also includes appearance options that can change how colors look without creating new unlimited colors. Depending on your account and rollout, you may see event color set options such as modern or classic, plus density controls.
+        </p>
+        <ol>
+          <li>Open Google Calendar on desktop.</li>
+          <li>Click Settings.</li>
+          <li>Open Appearance.</li>
+          <li>Choose the event color set if the option is available.</li>
+          <li>Adjust density to responsive or compact if needed.</li>
+        </ol>
+        <p>
+          This is useful when your Google Calendar event color palette appears too soft, too bold, or harder to read in your current theme.
+        </p>
+      </section>
 
-      <figure class="screenshot">
-        <img src="../images/screenshot-5.png" alt="Google Calendar with extended colors from Tint Calendar" loading="lazy" />
-        <figcaption>Tint Calendar extends the default color system for cleaner visual planning.</figcaption>
-      </figure>
+      <section id="color-labels" aria-labelledby="color-labels-title">
+        <h2 id="color-labels-title">Use color labels in Google Calendar</h2>
+        <p>
+          Google Calendar color labels are different from plain visual colors. Labels add a named category so you can track event types with both text and color, not color alone.
+          This can be useful for teams and for Time Insights workflows on supported accounts.
+        </p>
+        <p>
+          Availability is account-dependent. Some labels must be created on desktop before they appear in mobile apps.
+        </p>
 
-      <h2 class="icon-title"><span class="icon">⚡</span>How to Use It</h2>
-      <ol>
-        <li>Install the extension.</li>
-        <li>Open Google Calendar.</li>
-        <li>Click any event and choose from extended colors.</li>
-      </ol>
-      <p>That is it.</p>
+        <h3>When color labels are useful</h3>
+        <ul>
+          <li>Deep work</li>
+          <li>Meetings</li>
+          <li>Admin tasks</li>
+          <li>Interviews</li>
+          <li>Training</li>
+          <li>Personal time</li>
+          <li>Travel</li>
+          <li>Deadlines</li>
+        </ul>
 
-      <h2 class="icon-title"><span class="icon">🧠</span>Why Colors Matter More Than You Think</h2>
-      <p>Using more colors is not just about aesthetics. It helps you:</p>
-      <ul>
-        <li>instantly distinguish event types,</li>
-        <li>reduce cognitive load,</li>
-        <li>plan your day faster.</li>
-      </ul>
-      <p><strong>Example system:</strong></p>
-      <div class="color-legend" aria-label="Example calendar color categories">
-        <div class="legend-item"><span class="dot work" aria-hidden="true"></span>Work</div>
-        <div class="legend-item"><span class="dot health" aria-hidden="true"></span>Health and Gym</div>
-        <div class="legend-item"><span class="dot personal" aria-hidden="true"></span>Personal</div>
-        <div class="legend-item"><span class="dot deadline" aria-hidden="true"></span>Deadlines</div>
-      </div>
-      <p>Your brain processes color faster than text. This is a practical productivity upgrade.</p>
+        <h3>How to apply color labels</h3>
+        <ol>
+          <li>Open or create an event.</li>
+          <li>Edit the event.</li>
+          <li>Find the color label option if available.</li>
+          <li>Select a label.</li>
+          <li>Save the event.</li>
+        </ol>
+        <p>
+          If color labels are missing, your account may not support them, or they may need to be configured first on desktop.
+        </p>
+      </section>
 
-      <table>
-        <thead>
-          <tr>
-            <th>Feature</th>
-            <th>Google Calendar</th>
-            <th>With Tint Calendar</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Number of colors</td>
-            <td>Limited</td>
-            <td>Extended</td>
-          </tr>
-          <tr>
-            <td>Ease of use</td>
-            <td>Basic</td>
-            <td>Fast and intuitive</td>
-          </tr>
-          <tr>
-            <td>Reusability</td>
-            <td>Poor</td>
-            <td>Better</td>
-          </tr>
-          <tr>
-            <td>Scalability</td>
-            <td>Low</td>
-            <td>High</td>
-          </tr>
-        </tbody>
-      </table>
+      <section id="built-in-limits" aria-labelledby="built-in-limits-title">
+        <h2 id="built-in-limits-title">What Google Calendar cannot do natively</h2>
+        <p>
+          Built-in tools are good for basic color coding, but some limits show up in advanced workflows:
+        </p>
+        <ul>
+          <li>The default Google Calendar color palette for events is still limited for heavy visual planning.</li>
+          <li>Google Calendar text color control is limited in standard workflows.</li>
+          <li>Custom color options are not equally convenient across desktop and mobile.</li>
+          <li>Mobile apps can hide or simplify color tools that are visible on desktop.</li>
+          <li>Managing many categories with only built-in controls can become messy.</li>
+          <li>Google Calendar UI updates can change where options appear over time.</li>
+        </ul>
+        <div class="callout">
+          Google Calendar covers basic color coding well, but it is not designed as a full custom color management tool.
+        </div>
+      </section>
 
-      <h2 class="icon-title"><span class="icon">🎯</span>Who Needs This Most?</h2>
-      <p>This is especially useful if you:</p>
-      <ul>
-        <li>manage multiple projects,</li>
-        <li>track habits or workouts,</li>
-        <li>want better visual organization,</li>
-        <li>use Google Calendar daily.</li>
-      </ul>
+      <section id="tint-calendar" aria-labelledby="tint-calendar-title">
+        <h2 id="tint-calendar-title">How to add more colors to Google Calendar with Tint Calendar</h2>
+        <p>
+          If built-in options already solve your workflow, you do not need anything else. If you need Google Calendar custom colors beyond the default flow, faster reuse, or separate text color control, Tint Calendar can help.
+        </p>
+        <p>
+          Tint Calendar is an optional, lightweight browser extension that works directly inside Google Calendar on desktop. It adds more flexible custom color workflows, including separate background and text color behavior for events.
+        </p>
+        <figure class="screenshot">
+          <img src="../images/internetPictures/tint-calendar-more-colors-menu.png" alt="Tint Calendar extension menu with more colors for Google Calendar" loading="lazy" />
+          <figcaption>Tint Calendar adds more colors for Google Calendar directly in the browser interface.</figcaption>
+        </figure>
+        <p>
+          Tint Calendar is an independent browser extension and is not affiliated with Google.
+        </p>
 
-      <h2 class="icon-title"><span class="icon">❓</span>FAQ</h2>
-      <h3 class="icon-title"><span class="icon">?</span>Can I add unlimited colors without extensions?</h3>
-      <p>No, not in a practical way.</p>
-      <h3 class="icon-title"><span class="icon">?</span>Will this affect my existing events?</h3>
-      <p>No, it only enhances how you choose colors.</p>
-      <h3 class="icon-title"><span class="icon">?</span>Is it safe?</h3>
-      <p>Yes, as long as you install trusted extensions and review permissions.</p>
+        <h3>When Tint Calendar makes sense</h3>
+        <ul>
+          <li>You want more than the default Google Calendar color palette.</li>
+          <li>You want to reuse custom colors faster.</li>
+          <li>You want better contrast between event background and event text.</li>
+          <li>You want to make dense schedules easier to scan.</li>
+          <li>You mostly use Google Calendar in a desktop browser.</li>
+        </ul>
 
-      <h2 class="icon-title"><span class="icon">🚀</span>Final Thoughts</h2>
-      <p>Google Calendar is great, but its color system is limited.</p>
-      <p>If you only track a few events, default colors may be enough. If you rely on your calendar daily, you will feel the limits quickly.</p>
-      <div class="callout success">Tools like Tint Calendar can make a real difference in speed, clarity, and consistency.</div>
+        <h3>Built-in Google Calendar colors vs Tint Calendar</h3>
+        <table>
+          <caption>Built-in color tools compared with Tint Calendar extension</caption>
+          <thead>
+            <tr>
+              <th scope="col">Feature</th>
+              <th scope="col">Built-in Google Calendar</th>
+              <th scope="col">Tint Calendar</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Change calendar color</td>
+              <td>Yes</td>
+              <td>Works alongside built-in colors</td>
+            </tr>
+            <tr>
+              <td>Change individual event color</td>
+              <td>Yes</td>
+              <td>Adds more flexible color options</td>
+            </tr>
+            <tr>
+              <td>Add custom colors</td>
+              <td>Limited, mainly desktop</td>
+              <td>More convenient custom color workflow</td>
+            </tr>
+            <tr>
+              <td>Change event text color</td>
+              <td>Very limited</td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td>Works on Android or iPhone app</td>
+              <td>Yes, with limitations</td>
+              <td>No, desktop browser extension only</td>
+            </tr>
+            <tr>
+              <td>Requires extension</td>
+              <td>No</td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td>Best for</td>
+              <td>Basic color coding</td>
+              <td>More advanced visual customization</td>
+            </tr>
+          </tbody>
+        </table>
 
-      <p>
-        Want to try it now?
-        <a href="https://chromewebstore.google.com/detail/tint-calendar/kfcjjghcmejaddhighjfjifkofknbfie" target="_blank" rel="noopener noreferrer">Install Tint Calendar</a>
-      </p>
+        <figure class="screenshot">
+          <img src="../images/internetPictures/tint-calendar-change-event-text-color.png" alt="Tint Calendar extension with separate Google Calendar text color and background color controls" loading="lazy" />
+          <figcaption>Use separate text and background color controls to improve readability in dense schedules.</figcaption>
+        </figure>
+
+        <h3>Privacy and compatibility note</h3>
+        <p>
+          Tint Calendar is designed to improve the Google Calendar interface in your browser. Because Google Calendar can change its layout over time, some extension behaviors may need updates after major UI changes.
+        </p>
+        <p>
+          For current data handling details, read the <a href="/tintcalendar/privacy/">privacy policy</a>.
+        </p>
+
+        <div class="cta-wrap">
+          <a class="btn btn-primary" href="https://chromewebstore.google.com/detail/tint-calendar/kfcjjghcmejaddhighjfjifkofknbfie" target="_blank" rel="noopener noreferrer">Add more colors with Tint Calendar</a>
+          <a class="btn btn-secondary" href="/tintcalendar/#features">Tint Calendar features</a>
+        </div>
+        <p>
+          You can also <a href="/tintcalendar/#how-it-works">see how Tint Calendar works</a> and <a href="/tintcalendar/#screenshots">review real screenshots</a> before deciding.
+        </p>
+      </section>
+
+      <section id="troubleshooting" aria-labelledby="troubleshooting-title">
+        <h2 id="troubleshooting-title">Troubleshooting: why cannot I change colors in Google Calendar?</h2>
+
+        <h3>I cannot find the custom color option</h3>
+        <ul>
+          <li>Try desktop Google Calendar first.</li>
+          <li>Check the calendar list in the left sidebar under "My calendars."</li>
+          <li>Make sure you are editing calendar color, not only event color.</li>
+          <li>Some mobile views do not expose full custom color controls.</li>
+        </ul>
+
+        <h3>My event color keeps changing back</h3>
+        <ul>
+          <li>The event may still inherit the calendar default.</li>
+          <li>The event may belong to a shared calendar or invite with restricted controls.</li>
+          <li>Permissions can block overrides.</li>
+          <li>Sync delays can temporarily revert colors.</li>
+          <li>Try changing it again from desktop.</li>
+        </ul>
+
+        <h3>I do not see color labels</h3>
+        <ul>
+          <li>Color labels are not enabled for every account type.</li>
+          <li>Some labels must be created from desktop first.</li>
+          <li>Not all Google Calendar contexts show labels.</li>
+        </ul>
+
+        <h3>Colors look different on desktop and mobile</h3>
+        <ul>
+          <li>Apps and browsers can render colors slightly differently.</li>
+          <li>Appearance settings can shift contrast and emphasis.</li>
+          <li>Light and dark themes may display the same color differently.</li>
+        </ul>
+
+        <h3>Can I change Google Calendar text color?</h3>
+        <p>
+          Built-in controls for Google Calendar text color are limited. If separate text color customization is a core need, you can <a href="https://chromewebstore.google.com/detail/tint-calendar/kfcjjghcmejaddhighjfjifkofknbfie" target="_blank" rel="noopener noreferrer">install Tint Calendar from the Chrome Web Store</a> for desktop browser use.
+        </p>
+        <p>
+          For official behavior changes and account-specific updates, check the <a href="https://support.google.com/calendar/" target="_blank" rel="noopener noreferrer">Google Calendar Help Center</a>.
+        </p>
+      </section>
+
+      <section id="faq" aria-labelledby="faq-title">
+        <h2 id="faq-title">FAQ</h2>
+
+        <details>
+          <summary>Can I change colors on Google Calendar?</summary>
+          <p>Yes. You can change the color of an entire calendar, change the color of individual events, and adjust some appearance settings. Some options depend on device and account type.</p>
+        </details>
+
+        <details>
+          <summary>How do I change the color of a calendar in Google Calendar?</summary>
+          <p>On desktop, open Google Calendar, hover over a calendar in the left sidebar, click the three-dot menu, and choose a color. If available, use the custom color option.</p>
+        </details>
+
+        <details>
+          <summary>How do I change the color of one event in Google Calendar?</summary>
+          <p>Open the event, edit it, and choose a different event color or color label if the option is available.</p>
+        </details>
+
+        <details>
+          <summary>Can I add custom colors to Google Calendar?</summary>
+          <p>Google Calendar supports some custom color options, especially for calendars on desktop. For more flexible custom colors and text color control, you can use a browser extension such as Tint Calendar.</p>
+        </details>
+
+        <details>
+          <summary>Can I change Google Calendar colors on Android?</summary>
+          <p>Yes, but mobile options may be more limited. Open the event or calendar settings in the Google Calendar app and look for color or label options. Some custom settings may need to be created on desktop.</p>
+        </details>
+
+        <details>
+          <summary>Can I change Google Calendar colors on iPhone or iPad?</summary>
+          <p>Yes, but the available options may differ from desktop. Open the event, tap Edit, and check whether color or label options are available.</p>
+        </details>
+
+        <details>
+          <summary>Why do my Google Calendar colors look different?</summary>
+          <p>Colors can look different because of device rendering, app version, dark mode, light mode, appearance settings, or Google Calendar UI updates.</p>
+        </details>
+
+        <details>
+          <summary>Is Tint Calendar affiliated with Google?</summary>
+          <p>No. Tint Calendar is an independent browser extension and is not affiliated with Google.</p>
+        </details>
+
+        <details>
+          <summary>Does Tint Calendar work on mobile?</summary>
+          <p>No. Tint Calendar is a browser extension and is intended for desktop browser usage.</p>
+        </details>
+
+        <details>
+          <summary>When should I use Tint Calendar instead of built-in Google Calendar colors?</summary>
+          <p>Use the built-in settings for basic calendar and event colors. Use Tint Calendar if you need more custom colors, faster color selection, or separate text color customization.</p>
+        </details>
+      </section>
+
+      <section aria-labelledby="final-note-title">
+        <h2 id="final-note-title">Final note</h2>
+        <p>
+          If the built-in Google Calendar palette is enough, you can stop here. If you want more custom colors, faster color selection, and better text contrast in desktop Google Calendar, Tint Calendar gives you an optional upgrade path.
+        </p>
+        <div class="cta-wrap">
+          <a class="btn btn-primary" href="https://chromewebstore.google.com/detail/tint-calendar/kfcjjghcmejaddhighjfjifkofknbfie" target="_blank" rel="noopener noreferrer">Install Tint Calendar</a>
+          <a class="btn btn-secondary" href="/tintcalendar/">Back to Tint Calendar home</a>
+        </div>
+      </section>
     </article>
 
     <div class="footer">
-      <a href="../index.html">Back to homepage</a> | <a href="../privacy/index.html">Privacy Policy</a>
+      <a href="/tintcalendar/">Home</a> | <a href="/tintcalendar/privacy/">Read the privacy policy</a>
     </div>
   </main>
 </body>
