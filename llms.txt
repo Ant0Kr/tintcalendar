@@ -5,7 +5,8 @@
 ## Pages
 
 - [Home](https://ant0kr.github.io/tintcalendar/): Main landing page with features overview, installation instructions, and FAQ.
-- [How to Add More Colors to Google Calendar](https://ant0kr.github.io/tintcalendar/how-to-change-colors-on-google-calendar/): Step-by-step guide explaining how users can get more color options in Google Calendar using the Tint Calendar extension.
+- [How to Change Colors on Google Calendar](https://ant0kr.github.io/tintcalendar/how-to-change-colors-on-google-calendar/): Step-by-step guide explaining how to change calendar and event colors in Google Calendar on desktop, iPhone, and Android.
+- [How to Get More Colors on Google Calendar](https://ant0kr.github.io/tintcalendar/how-to-get-more-colors-on-google-calendar/): Guide covering how to expand Google Calendar's color options using built-in methods, color labels, separate calendars, and the Tint Calendar extension on desktop.
 - [Privacy Policy](https://ant0kr.github.io/tintcalendar/privacy/): Privacy policy for the Tint Calendar browser extension.
 
 ## About
