@@ -1,0 +1,22 @@
+{
+  "name": "Tint Calendar",
+  "short_name": "Tint Calendar",
+  "icons": [
+    {
+      "src": "/tintcalendar/images/favicon48x48.png",
+      "sizes": "48x48",
+      "type": "image/png"
+    },
+    {
+      "src": "/tintcalendar/images/favicon96x96.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    },
+    {
+      "src": "/tintcalendar/images/apple-touch-icon.png",
+      "sizes": "180x180",
+      "type": "image/png"
+    }
+  ],
+  "display": "standalone"
+}
