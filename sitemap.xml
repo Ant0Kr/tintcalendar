@@ -3,29 +3,29 @@
   xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
   <url>
     <loc>https://ant0kr.github.io/tintcalendar/</loc>
-    <lastmod>2026-04-06T10:45:04+00:00</lastmod>
+    <lastmod>2026-11-06T10:45:04+00:00</lastmod>
     <priority>1.00</priority>
   </url>
+
   <url>
-    <loc>https://ant0kr.github.io/tintcalendar/index.html</loc>
-    <lastmod>2026-04-06T10:45:04+00:00</lastmod>
+    <loc>https://ant0kr.github.io/tintcalendar/how-to-change-colors-on-google-calendar/</loc>
+    <lastmod>2026-11-06T10:45:04+00:00</lastmod>
     <priority>0.80</priority>
   </url>
+
   <url>
-    <loc>https://ant0kr.github.io/tintcalendar/how-to-change-colors-on-google-calendar/index.html</loc>
-    <lastmod>2026-04-06T10:45:04+00:00</lastmod>
+    <loc>https://ant0kr.github.io/tintcalendar/privacy/</loc>
+    <lastmod>2026-11-06T10:45:04+00:00</lastmod>
+    <priority>0.30</priority>
+  </url>
+
+  <url>
+    <loc>https://ant0kr.github.io/tintcalendar/how-to-get-more-colors-on-google-calendar/</loc>
+    <lastmod>2026-11-01T00:00:00+00:00</lastmod>
     <priority>0.80</priority>
   </url>
-  <url>
-    <loc>https://ant0kr.github.io/tintcalendar/privacy/index.html</loc>
-    <lastmod>2026-04-06T10:45:04+00:00</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://ant0kr.github.io/tintcalendar/how-to-get-more-colors-on-google-calendar/index.html</loc>
-    <lastmod>2026-06-01T00:00:00+00:00</lastmod>
-    <priority>0.80</priority>
-  </url>
+
 </urlset>
